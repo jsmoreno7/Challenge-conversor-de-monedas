@@ -5,5 +5,5 @@ Tendrás un menu con seis opciones posibles para elegir según la moneda que des
 
 Al elegir una opción inválida el programa te da el aviso que la opción es incorrecta y te da nuevamente el menú para escoger una opción.
 
-al ser una versión beta el programa estará sometido a mejoras.
+Al ser una versión beta el programa estará sometido a mejoras.
 
