@@ -41,24 +41,24 @@ public class PrincipalConversorDeMoneda {
 
                     String claveM = menuHashMap.get(opcion);
                     //Sout para ver si se llama correctamente al valor del Hashmap.
-                   // System.out.println(claveM);
+                    //System.out.println(claveM);
                     DatosConversionMoneda moneda = obtenerValor.ConversorMoneda(claveM);
 
             switch (opcion){
                 case 1:
                     System.out.println("Elijió Conversión de Dólar a Peso argentino... \n" +
                             "Ingrese el valor a convertir: ");
-                    var cantidadDolarAars = lectura.nextDouble();
-                    var pesosARS = moneda.conversion_rates().get("USD");
-                    double cantidadPesosA = (double) pesosARS;
+                    double cantidadDolarAars = lectura.nextDouble();
+                    var pesosArsApi = moneda.conversion_rates().get("ARS");
+                    double cantidadPesosA = (double) pesosArsApi;
                     cantidadDolarAars = cantidadDolarAars * cantidadPesosA;
                     System.out.println("El valor de Dólar a Peso argentino corresponde al valor final de "+ cantidadDolarAars);
                     break;
                 case 2:
                     System.out.println("Elijió Conversión de Peso argentino a Dólar... \n " + "Ingrese el valor a convertir:");
                     double cantidadPesoAdolar = lectura.nextDouble();
-                    var dolar1 = moneda.conversion_rates().get("ARS");
-                    double cantidadDolar1 = (double) dolar1;
+                    var dolarApi1 = moneda.conversion_rates().get("USD");
+                    double cantidadDolar1 = (double) dolarApi1;
                     cantidadPesoAdolar = cantidadPesoAdolar * cantidadDolar1;
                     System.out.println("El valor de Peso argentino a Dólar corresponde al valor final de "+ cantidadPesoAdolar);
                     break;
@@ -66,8 +66,8 @@ public class PrincipalConversorDeMoneda {
                     System.out.println("Elijió Conversión de Dólar a Real brasileño... \n" +
                             "Ingrese el valor a convertir:");
                     double cantidadDolarAbrl = lectura.nextDouble();
-                    var realBrasilenio = moneda.conversion_rates().get("USD");
-                    double cantidadRealB = (double) realBrasilenio;
+                    var realBrlApi = moneda.conversion_rates().get("BRL");
+                    double cantidadRealB = (double) realBrlApi;
                     cantidadDolarAbrl = cantidadDolarAbrl * cantidadRealB;
                     System.out.println("El valor de Dólar a Real brasileño corresponde al valor final de "+ cantidadDolarAbrl);
                     break;
@@ -75,8 +75,8 @@ public class PrincipalConversorDeMoneda {
                     System.out.println("Elijió Conversión de Real brasileño a Dólar... \n" +
                             "Ingrese el valor a convertir:");
                     double cantidadBrlAdolar = lectura.nextDouble();
-                    var dolar2 = moneda.conversion_rates().get("BRL");
-                    double cantidadDolar2 = (double) dolar2;
+                    var dolarApi2  = moneda.conversion_rates().get("USD");
+                    double cantidadDolar2 = (double) dolarApi2;
                     cantidadBrlAdolar = cantidadBrlAdolar * cantidadDolar2;
                     System.out.println("El valor de Real brasileño a Dólar corresponde al valor final de "+ cantidadBrlAdolar);
                     break;
@@ -84,8 +84,8 @@ public class PrincipalConversorDeMoneda {
                     System.out.println("Elijió Conversión de Dólar a Peso colombiano... \n" +
                             "Ingrese el valor a convertir:");
                     double cantidadDolarAcop = lectura.nextDouble();
-                    var pesoColombiano = moneda.conversion_rates().get("USD");
-                    double cantidadPesosC = (double) pesoColombiano;
+                    var pesoCopApi = moneda.conversion_rates().get("COP");
+                    double cantidadPesosC = (double) pesoCopApi;
                     cantidadDolarAcop = cantidadDolarAcop * cantidadPesosC;
                     System.out.println("El valor de Dólar a Peso colombiano corresponde al valor final de "+ cantidadDolarAcop);
                     break;
@@ -93,10 +93,10 @@ public class PrincipalConversorDeMoneda {
                     System.out.println("Elijió Conversión de Peso colombiano a Dólar... \n" +
                             "Ingrese el valor a convertir:");
                     double cantidadCopAdolar = lectura.nextDouble();
-                    var dolar3 = moneda.conversion_rates().get("COP");
-                    double cantidadDolar3 = (double) dolar3;
-                    var multiplicar = cantidadCopAdolar * cantidadDolar3;
-                    System.out.println("El valor de Peso colombiano a Dólar corresponde al valor final de "+ multiplicar);
+                    var dolarApi3  = moneda.conversion_rates().get("USD");
+                    double cantidadDolar3 = (double) dolarApi3;
+                    cantidadCopAdolar = cantidadCopAdolar * cantidadDolar3;
+                    System.out.println("El valor de Peso colombiano a Dólar corresponde al valor final de "+ cantidadCopAdolar);
                     break;
                 case 7:
                     System.out.println("Usted elijió la opción Salir");
@@ -106,7 +106,7 @@ public class PrincipalConversorDeMoneda {
                 default:
                     System.out.println("Opción no válida...");
                     System.out.println("*****************************************");
-                    System.out.println("Elija una opción válida");
+                   System.out.println("Elija una opción válida");
             }
 
 
