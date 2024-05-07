@@ -36,8 +36,8 @@ Al elegir una opción inválida el programa te da el aviso que la opción es inc
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/) - La herramienta para códificar en java
-* [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) - Development Kit
+* [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/) - Herramienta para códificar en java
+* [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) - JAVA Development Kit 17
 
 ## Versionado 📌
 
@@ -53,4 +53,4 @@ Este proyecto está bajo la Licencia (Moreno Enterprise).
 
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/jsmoreno7) 😊
+⌨️ con ❤️ por [jsmoreno7](https://github.com/jsmoreno7) 😊
